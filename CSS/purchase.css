@@ -1,0 +1,131 @@
+.h1, h1 {
+    text-align: center;
+    font-size: 2.5rem;
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+/* img1{
+    width: 25%;
+}
+input1{
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+} */
+.product{
+    border: 1px solid #ddd;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 2px 2px 4px #ddd;
+    max-width: 1100px;
+}
+.item-shop-cart1{
+    display: flex;
+}
+/* .item-shop-cart1 img{
+    width: 60px;
+    height: 60px;
+} */
+.item-shop-cart1 .img,.quantity1,.total1,.action1{
+    flex: 1;
+}
+/* Product */
+/* .item-shop-cart1 .cart-quantity-input1{
+    margin-left: -200px;
+} */
+
+/* .item-shop-cart1 .btn-danger{
+    margin-left: 50px;
+} */
+/* .item-shop-cart1 .cart-price1{
+    margin-left: 240px;
+} */
+/* .item-shop-cart1 .imgsrc{
+    margin-left: 130px;
+} */
+/* .item-shop-cart1 .cart-row{
+    margin-bottom: 100px;
+} */
+.cart-row{
+    display: flex;
+    margin-left: 105px;
+}
+.cart-column{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+    margin-right: 1.5em;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+
+/* END Product */
+.item-shop-cart1 .price1{
+    flex: 2;
+    
+    color: #000;
+}
+.item-shop-cart1 .product-title1{
+    flex: 2;
+    display: flex;
+}
+.purchase .tieude{
+    color: #F7452E;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+/* .basketTotalContainer{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 10px 0;
+} */
+.purchase .i{
+    cursor: pointer;
+}
+/* .basketTotal{
+    width: 30%;
+} */
+/* .totalbasket{
+    width: 10%;
+} */
+/* TOTAL */
+.cart-total{
+    margin-left: 850px;
+}
+.btn1{
+    margin-left: 500px;
+    margin-bottom: 20px;
+} 
+.btn1 {
+background: #000;
+border-radius: 5px;
+color: palevioletred;
+font-weight: 500; 
+transition: background 0.3s ease-out;
+}
+.btn1:hover {
+background: var(--main-red);
+}
+.btn1:hover> i {
+    transform: translateX(2px);
+}
+.btn1 > i {
+    margin-left: 10px;
+    transform: translateX(0);
+    transition: transform 0.3s ease-out;
+}
+.btn1 {
+    display: inline-block;
+    /* padding: 1rem 2rem; */
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+.container{
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1.5em;
+}

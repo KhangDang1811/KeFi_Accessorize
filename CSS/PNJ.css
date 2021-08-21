@@ -1,0 +1,384 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*{
+    margin:0;
+    padding: :0;
+    box-sizing:border-box;
+    font-family:'Poppins' , san-serif;
+    scroll-behavior:smooth;
+}
+body{
+    min-height: 1000px;
+}
+p{
+    font-weight: 300;
+    color:#111;
+}
+.banner{
+    position: relative;
+    width: 100;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(https://images.unsplash.com/photo-1576812286449-276df3549e0f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=375&q=80);
+    background-size: cover;
+    clip-path: polygon(0 26%, 100% 26%, 100% 100%, 0% 100%);
+}
+.banner .content{
+    max-width: 900px;
+    text-align: center;
+}
+.banner .content h2{
+    font-size: 5em;
+    color: #fff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.banner .content p{
+    font-size: 1em;
+    color: #fff;
+}
+.btn{
+    font-size: 1em;
+    color: #fff;
+    background: #ff0157;
+    display: inline-block;
+    padding: 10px 30px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    border-radius: 4px;
+}
+.btn :hover{
+    letter-spacing: 6px;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 10000;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    transition: 0.5s;
+}
+header.logo{
+    color: #fff;
+    font-weight: 700;
+    font-size: 2em;
+    text-decoration: none;
+}
+header .logo span{
+    color: #ff0157;
+}
+header .navigation{
+    position: relative;
+    display: flex;
+}
+header .navigation li{
+    list-style: none;
+    margin-left: 30px;
+}
+header .navigation li a{
+    text-decoration: none;
+    color: #111;
+    font-weight: 300;
+}
+header .sticky{
+    background: #fff;
+    padding: 10px 100px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+header .sticky .logo{
+    color: #111;
+}
+header .sticky .navigation li a{
+    color: #111;
+}
+header .navigation li a:hover{
+    color: #ff0157;
+}
+section{
+    padding: 100px;
+}
+.row{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.row .col50{
+    position: relative;
+    width: 48%;
+}
+.titleText{
+    color: #111;
+    font-size: 2em;
+    font-weight: 300;
+}
+.titleText .span{
+    color: #ff0157;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+.row .col50 .imgBX{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.row .col50 .imgBX img{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.title{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.menu .content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+.menu .content .box{
+    width: 340px;
+    margin: 20px;
+    border: 15px solid #fff;
+    box-shadow: 0 5px 35px rgba(0,0,0,0.08);
+}
+.menu .content .box .imgBX{
+    position: relative;
+    width: 300px;
+    height: 300px;
+}
+.menu .content .box .imgBX img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.menu .content .box .text{
+    padding: 15px 0 5px;
+}
+.menu .content .box .text h3{
+    font-weight: 400;
+    color: #111;
+}
+/* LOGO */
+.main-header-wrapper {
+    position: fixed;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    top: 0;
+    left: 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    height: 100px;
+    z-index: 1000;
+    opacity: 1;
+    pointer-events: none;
+  }
+  
+  .main-header-wrapper .logo {
+    pointer-events: visible;
+    opacity: 1;
+    -webkit-transition: opacity 0.5s ease;
+    transition: opacity 0.5s ease;
+  }
+  
+  .main-header-wrapper svg path {
+    fill: #232323;
+  }
+  
+  .main-header-wrapper svg path .kategora-type {
+    position: relative;
+  }
+  
+  .main-header-wrapper.change-color svg path {
+    fill: #fff;
+  }
+  /* KEFI_ACCESSORIZE */
+  .text-wrapper{
+    position: relative;
+    left: 10px;
+    display: block;
+    font-family: Saol;
+    font-size: 10px;
+    font-weight: 600;
+    color: #fff;
+    line-height: 1.1em;
+    letter-spacing: 2.3em;
+    text-transform: uppercase;
+    opacity: 1;
+  }
+  /* FOOTER */
+  footer {
+    font-weight: 300;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2rem;
+    border-top: 4px solid var(--main-red);
+    flex-wrap: wrap;
+    background: #111;
+   
+  }
+footer .container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+footer .container .noi-dung{
+    margin-right: 30px;
+}
+footer  .container .noi-dung.about{
+    width:40%;
+}
+footer .container .noi-dung.about h4{
+    position: relative;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+footer .container .noi-dung.about h4:before{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: #f00;
+}
+footer .container .noi-dung.about p{
+    color: #999;
+}
+/*Thiết Lập Cho Thành Phần Icon Mạng Xã Hội*/
+.container .noi-dung.about .social-icon{
+    margin-top: 20px;
+    display: flex;
+    margin-left: -35px;
+}
+.container .noi-dung.about .social-icon li {
+    list-style: none;
+}
+.container .noi-dung.about .social-icon li a{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    
+    text-decoration: none;
+    border-radius: 4px;
+}
+.container .noi-dung.about .social-icon li a:hover{
+    background: #f00;
+}
+.container .noi-dung.about .social-icon li a .fa{
+    color: #fff;
+    font-size: 20px;
+}
+.links h4{
+    position: relative;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.links h4{
+    position: relative;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.links h4::before{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: #f00;
+}
+.links{
+   position: relative;
+   width: 25%;
+}
+.links ul li{
+    list-style: none;
+    margin-left: -40px;
+}
+.links ul li a{
+    color: #999;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+.links ul li a:hover{
+    color: #fff;
+}
+.contact h4{
+    position: relative;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.contact h4::before{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: #f00;
+}
+.contact{
+    width: calc(35% - 60px);
+    margin-right: 0 !important;
+}
+.contact .info{
+    position: relative;
+    margin-left: -30px;
+}
+.contact .info li{
+    display: flex;
+    margin-bottom: 16px;
+}
+.contact .info li span:nth-child(1) {
+    color: #fff;
+    font-size: 20px;
+    margin-right: 10px;
+}
+.contact .info li span{
+    color: #999;
+}
+.contact .info li a{
+    color: #999;
+    text-decoration: none;
+}
+
+
+
+ 
+
